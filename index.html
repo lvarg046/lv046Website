@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bootstrap Tutorial Sample Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Website</title>
+        <meta name="description" content="Personal website for Luis Vargas, made as a tool to learn how to utilize the Bootstrap framework, in conjunction with HTML/CSS.">
         <link href="css/main.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -14,7 +15,10 @@
 
     <body>
 
+    <!-- Side-Bar Area -->
     <header id="header" style="background-position: left">
+
+        <!-- Quick Links/Avatar -->
         <div class="d-flex flex-column">
             <div class="profile">
                 <img src="images/avatar.png" alt="" class="img-fluid rounded-circle">
@@ -23,52 +27,62 @@
                     <a href="https://www.github.com/lvarg046"><i class="bi bi-github"></i></a>
                     <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
+            </div><!-- End Quick Links/Avatar -->
 
-                <!--            <p>I am <span class="typed" data-typed-items="Designer, Developer, Student, Musician"></span></p>-->
-            </div>
+            <!-- Nav-Menu -->
             <nav id="navbar" class="nav-menu navbar">
-                <ul class="nav nav-pills">
+                <ul>
                     <li class="nav-item">
-                        <a class="nav-link " href="#hero">
-                        <i class="bi bi-house"></i>
-                        <span>Home</span>
-                    </a>
+                        <a class="nav-link" href="#hero">
+                            <i class="bi bi-house"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link navbar-nav-scroll" href="#about">
+                        <a class="nav-link" href="#about">
                             <i class="bi bi-person"></i>
                             <span>About Me</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link scrollto" href="#portfolio">
+                        <a class="nav-link" href="#proj-exp">
                             <i class="bi bi-laptop"></i>
-                            <span>Projects</span>
+                            <span>Experience/Projects</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/lvarg046">
-                            <i class="bi bi-github"></i>
-                            <span>GitHub</span>
+                        <a class="nav-link" href="/downloadable/Vargas_Resume.pdf" download="LuisVargas_Resume">
+                            <i class="bi bi-file-arrow-down"></i>
+                            <span>Resume</span>
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="bi bi-envelope"></i>
+                            <span>Contact Info</span>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
+            </nav> <!-- End Nav Menu -->
         </div>
-    </header>
+    </header> <!-- End Side-Bar Area -->
 
+    <!-- Hero -->
+    <!-- Might Remove Hero section altogether? -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center" data-spy="scroll" data-target="#navbar">
         <div class="hero-container" >
             <h1>Luis Vargas</h1>
         </div>
-    </section>
+    </section> <!-- End Hero  -->
 
+    <!-- Main Body Content -->
     <main id="main">
 
+        <!-- About Me -->
         <section id="about" class="about" data-spy="scroll" data-target="#navbar">
             <div class="container">
                 <div class="section-title">
@@ -106,7 +120,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> <!-- End About Me -->
+
+        <!-- Skills  -->
         <section id="Skills" class="skills section-bg">
             <div class="container">
                 <div class="section-title">
@@ -138,7 +154,7 @@
                         <div class="progress">
                             <span class="skill">Proficient in English & Spanish</span>
                             <span class="skill">Circuit Design, Validation, and Testing</span>
-                            <span class="skill">Surface Mounting Electronic Components</span>
+                            <span class="skill">Relational Database Management</span>
                             <span class="skill">Arduino/Raspberry Pi</span>
                             <span class="skill">Technical Writing</span>
                             <span class="skill">NodeMCU</span>
@@ -146,12 +162,225 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="portfolio" class=" portfolio section-bg">
+        </section> <!-- End Skills -->
 
-        </section>
+        <!-- Resume -->
+        <section id="proj-exp" class="resume">
+        <div class="container">
+            <div class="section-title">
+                <h2>Resume</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
 
-    </main>
+            <!-- Education -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Science in Computer Engineering</h4>
+                        <h5>2017-2022</h5>
+                        <p><em>University of Central Florida, Orlando, FL</em></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">&nbsp;</h3>
+                    <div class="resume-item">
+                        <h4>Associate in Arts - Engineering</h4>
+                        <h5>2015-2017</h5>
+                        <p><em>Santa Fe College, Gainesville, FL</em></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div> <!-- End Education -->
+
+            <!-- Professional Experience -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Undergraduate Research Assistant</h4>
+                        <h5>February 2021 - Present</h5>
+                        <p><em>Terahertz Integrated Circuits Lab, Orlando, Florida</em></p>
+                        <ul>
+                            <li>Developed, implemented, and integrated control software for motors resulting in automation of motion resulting in increased accuracy and precision during motor movement.</li>
+                            <li>Assisting Graduate researchers with software development for automation of millimeter-wave function generators, oscilloscopes, and signal analyzers for data production and collection.</li>
+                            <li>Assisting Graduate researchers in completion of experiments using broadband silicon-based TeraHertz integrated circuits.</li>
+                            <li>Assisting with implementation of proof-of-concept experiments for real-time computing/imaging based on low power millimeter-wave and TeraHertz sensors.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>AppleCare At-Home-Advisor</h4>
+                        <h5>March 2018 - March 2021</h5>
+                        <p><em>Apple, Inc., Remote</em></p>
+                        <ul>
+                            <li>Provided thorough technical support, problem resolution, and mentoring for both customers and newly-hired personnel while remaining up-to-date on latest technologies and solutions applicable to company products.</li>
+                            <li>Utilized internal ticketing system to manage, track, and process actions taken on customer accounts, passwords and/or products, while documenting support resolutions.</li>
+                            <li>Identified and solved technical issues with a variety of internal diagnostic tools, strong verbal skills, and strong interpersonal skills with all customer interactions.</li>
+                            <li>Managed incoming and outgoing call flow while responding to the technical support needs of customers while managing customer expectations and experiences, to a high degree of Customer Satisfaction (CSAT).</li>
+                            <li>During the 13-month period of February 2020 to March 2021 exceeded company average CSAT score of 80% by maintaining an Advisor CSAT score of 100% and Customer CSAT 88.61%.</li>
+                            <li>During Fiscal Year 2020 I exceeded company average CSAT score of 85% by maintaining an Advisor CSAT score of 96.08% and a Customer CSAT score of 88.35%.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">&nbsp;</h3>
+                    <div class="resume-item">
+                        <h4>Server</h4>
+                        <h5>March 2015 - August 2017</h5>
+                        <p><em>Red Lobster, Gainesville, FL</em></p>
+                        <ul>
+                            <li>Responsible for taking customer orders and ensuring customer satisfaction by recommending daily specials, and applicable discounts to successfully up-sell limited-time/seasonal food items.</li>
+                            <li>Exceeded company and customer expectations by providing excellent customer service by utilizing time-management skills, conflict resolution skills, and menu knowledge.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Legal Assistant</h4>
+                        <h5>January 2014 - December 2014</h5>
+                        <p><em>Friedland & Associates P.A., Fort Lauderdale, FL</em></p>
+                        <ul>
+                            <li>Supported case preparation by updating executive summaries through up-to-date maintenance of medical costs and figures regarding each client's case.</li>
+                            <li>Streamlined communications between multiple departments by creating an easily accessible, update-able data/information table to catalog all open, pending, settled, and disbursed cases.</li>
+                            <li>Assisted in the monetary disbursement process by negotiating a reduction in all associated and relevant costs accrued by the clients through direct contact with the varying providers involved in the cases.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Professional Experience-->
+        </section> <!-- End Resume -->
+
+        <!-- Projects -->
+        <section id="portfolio" class="resume section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="resume-item">
+                            <h4>Pick Pocket Tuner</h4>
+                            <h5>Language(s) Used: C, Python</h5>
+                            <p><em>Senior Design Capstone Project</em></p>
+                            <ul>
+                                <li>Worked as Project Lead to ensure proper adherence to project timeline, budget, and meeting deadlines.</li>
+                                <li>Worked as Computer Engineer in conjunction with Electrical Engineer group members to ensure integration of Software and Hardware components.</li>
+                                <li>Developed Software in conjunction with another Computer Engineer team member to properly display the tuning information and the Fast Fourier Transform using micro-Python libraries.</li>
+                                <li>Tested hardware and software performance to accomplish the automatic tuning by leveraging hardware and software specific tests.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Small Radar</h4>
+                            <h5>Language(s) Used: C/C++</h5>
+                            <p><em>Junior Design Individual Project</em></p>
+                            <ul>
+                                <li>Utilized echolocation and Doppler Effect principles to aid in determining varying distances from point of origin to objective.</li>
+                                <li>Utilized and implemented the NodeMCU ESP8266 development board as the driver/controller of the project and wrote custom software to determine and display the distance on a console output.</li>
+                                <li>After the Junior Design course completed, I added and integrated a small LCD to relay distance measurements to the user, and a battery circuit to be able to make the device portable.</li>
+                                <li>After the Junior Design course completed, I designed and created a custom circuit and PCB schematic using the Fusion360 software to be able to take the project from development to prototyping.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="resume-item">
+                            <h4>Book Order Website</h4>
+                            <h5>Language(s) Used: PHP, MySQL, HTML, CSS</h5>
+                            <p><em>COP4710 Database Management Systems - Final Course Project</em></p>
+                            <ul>
+                                <li>Implemented a textbook ordering website based on specific software requirements laid out by the client description.</li>
+                                <li>Created, and maintained a small database to store users, orders, and credentials using MySQL</li>
+                                <li>Assisted in creating and implementing frontend pages for different end-user views using HTML & CSS, while integrating the necessary backend information in PHP & MySQL.</li>
+                                <li>Implemented, tested, and debugged pages that handled user registration, authentication, admin-level user modification, as well as the form handling textbook order creation, deletion, and editing.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Private Notes App</h4>
+                            <h5>Language(s) Used: Swift</h5>
+                            <p><em>COP4331 Processes for Object-Oriented Software Development - Course Project </em></p>
+                            <ul>
+                                <li>Tasked with implementing a private notes application based on high-level requirements description from client to demonstrate the Software Development Lifecycle.</li>
+                                <li>Designed and implemented user authentication, database, storage, and multiple user interfaces as outlined by project requirements</li>
+                                <li>Utilized FireBase API to perform permanent storage of notes to be able to modify the notes</li>
+                                <li>Utilized FireBase API to perform User Authentication in order to make the application a privatized repository with individual user access.</li>
+                                <li>Completed Technical documentation based on concept of operations, software requirements, hardware requirements, application test design implementation and results.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!--End Container-->
+        </section> <!-- End Projects -->
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>Orlando, FL</p>
+                            </div>
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>email@email.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <p>+1 (xxx) xxx-xxxx</p>
+                            </div>
+                            <iframe src="https://maps.google.com/maps?q=University%20Of%20Central%20Florida&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="/forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="10" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- End Contact -->
+
+    </main> <!-- End Main-->
 
 
     </body>
