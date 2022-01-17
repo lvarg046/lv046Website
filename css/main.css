@@ -400,13 +400,14 @@ section {
     color: #050d18;
 }
 .contact .info p {
-    padding: 0 0 10px 60px;
+    padding: 10px 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
     color: #173b6c;
 }
+
 .contact .info .email p {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 .contact .info .social-links {
     padding-left: 60px;
