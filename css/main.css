@@ -1,7 +1,7 @@
 
-/*--------------------------------------------------------------
+/*
 # General
---------------------------------------------------------------*/
+*/
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
@@ -22,39 +22,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    background: #149ddd;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    transition: all 0.4s;
-}
-.back-to-top i {
-    font-size: 28px;
-    color: #fff;
-    line-height: 0;
-}
-.back-to-top:hover {
-    background: #2eafec;
-    color: #fff;
-}
-.back-to-top.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*
+* Header
+*/
 #header {
     position: fixed;
     top: 0;
@@ -120,9 +90,9 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 0;
     }
 }
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/*
+* Navigation Menu
+*/
 /* Desktop Navigation */
 .nav-menu {
     padding: 30px 0 0 0;
@@ -158,39 +128,39 @@ h1, h2, h3, h4, h5, h6 {
     color: #149ddd;
 }
 
-/* Mobile Navigation */
-.mobile-nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    font-size: 24px;
-    transition: all 0.4s;
-    outline: none !important;
-    background-color: #149ddd;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    border-radius: 50px;
-    cursor: pointer;
-}
+/*!* Mobile Navigation *!*/
+/*.mobile-nav-toggle {*/
+/*    position: fixed;*/
+/*    right: 15px;*/
+/*    top: 15px;*/
+/*    z-index: 9998;*/
+/*    border: 0;*/
+/*    font-size: 24px;*/
+/*    transition: all 0.4s;*/
+/*    outline: none !important;*/
+/*    background-color: #149ddd;*/
+/*    color: #fff;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    line-height: 0;*/
+/*    border-radius: 50px;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.mobile-nav-active {
-    overflow: hidden;
-}
-.mobile-nav-active #header {
-    left: 0;
-}
+/*.mobile-nav-active {*/
+/*    overflow: hidden;*/
+/*}*/
+/*.mobile-nav-active #header {*/
+/*    left: 0;*/
+/*}*/
 
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*
+* Hero Section
+*/
 #hero {
     width: 100%;
     height: 100vh;
@@ -334,25 +304,11 @@ section {
     font-family: "Poppins", sans-serif;
     color: #050d18;
 }
-.skills .progress .skill .val {
-    float: right;
-    font-style: normal;
-}
-.skills .progress-bar-wrap {
-    background: #dce8f8;
-    height: 10px;
-}
-.skills .progress-bar {
-    height: 10px;
-    transition: 0.9s;
-    background-color: #149ddd;
-}
 
 
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
+/*
+* Resume
+*/
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -386,6 +342,12 @@ section {
 .resume .resume-item ul {
     padding-left: 20px;
 }
+
+.resume .resume-item h10{
+    font-size: 12px;
+    padding-top:0;
+    padding-bottom:0;
+}
 .resume .resume-item ul li {
     padding-bottom: 10px;
 }
@@ -405,9 +367,9 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/*
+* Contact Me Section
+*/
 .contact {
     padding-bottom: 130px;
 }
@@ -487,43 +449,7 @@ section {
     font-weight: 400;
     font-size: 13px;
 }
-.contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-}
-.contact .php-email-form .error-message br + br {
-    margin-top: 25px;
-}
-.contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-}
-.contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-}
-.contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-}
+
 .contact .php-email-form .form-group {
     margin-bottom: 15px;
 }
@@ -552,59 +478,4 @@ section {
 .contact .php-email-form button[type=submit]:hover {
     background: #37b3ed;
 }
-@-webkit-keyframes animate-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@keyframes animate-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
-/*!*--------------------------------------------------------------*/
-/*# Breadcrumbs*/
-/*--------------------------------------------------------------*!*/
-/*.breadcrumbs {*/
-/*    padding: 20px 0;*/
-/*    background: #f9f9f9;*/
-/*}*/
-/*.breadcrumbs h2 {*/
-/*    font-size: 26px;*/
-/*    font-weight: 300;*/
-/*}*/
-/*.breadcrumbs ol {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    list-style: none;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    font-size: 15px;*/
-/*}*/
-/*.breadcrumbs ol li + li {*/
-/*    padding-left: 10px;*/
-/*}*/
-/*.breadcrumbs ol li + li::before {*/
-/*    display: inline-block;*/
-/*    padding-right: 10px;*/
-/*    color: #0e2442;*/
-/*    content: "/";*/
-/*}*/
-/*@media (max-width: 768px) {*/
-/*    .breadcrumbs .d-flex {*/
-/*        display: block !important;*/
-/*    }*/
-/*    .breadcrumbs ol {*/
-/*        display: block;*/
-/*    }*/
-/*    .breadcrumbs ol li {*/
-/*        display: inline-block;*/
-/*    }*/
-/*}*/
